@@ -1,0 +1,663 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-image:url(vegetables-set-left-black-slate1.png);
+    height: 140vh;
+   
+}
+.logo
+{
+   margin-left: 20px;
+   margin-top: 5px;
+}
+.navi ul
+{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+.navi ul li
+{
+    list-style-type: none;
+}
+.navi ul li a
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 28Px;
+    font-weight: bolder;
+    color: rgb(238, 238, 238);
+    text-shadow: 0 0 25px orangered;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    overflow: hidden;
+    margin-top: -25px;
+    left: 80px;
+}
+.navi ul li a:hover
+{
+    color: black;
+    transition-delay: 0;
+}
+.navi ul li a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: orange;
+    text-shadow: 0 0 25px orangered, 0 0 30px orangered, 0 0 80px orangered;
+    font-weight: bolder;
+    opacity: 0;
+    transition: 0.5s;
+}
+.navi ul li a:hover::before
+{
+    opacity: 1;
+    letter-spacing: 5px;
+    transition-delay: 0.6s;
+}
+ a span
+{
+    display: block;
+    position: absolute;
+    background: orangered;
+}
+ a span:nth-child(1)
+{
+    left: 13px;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover span:nth-child(1)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.8s;
+}
+a span:nth-child(2)
+{
+    left: 15px;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    width: 78%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover span:nth-child(2)
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+a span:nth-child(3)
+{
+    right:0px;
+    top: 25px;
+    left: 125px;
+    bottom: 0;
+    width:2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover span:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+a span:nth-child(4)
+{
+    left:13px;
+    top: 75px;
+    width:80%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover span:nth-child(4)
+{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+a .sp:nth-child(3)
+{
+    right:0px;
+    top: 25px;
+    left: 148px;
+    bottom: 0;
+    width:2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover .sp:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+a .sp1:nth-child(3)
+{
+    right:0px;
+    top: 25px;
+    left: 155px;
+    bottom: 0;
+    width:2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover .sp1:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+a .sp4:nth-child(2)
+{
+    left: 15px;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    width: 84%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover .sp4:nth-child(2)
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+a .sp2:nth-child(3)
+{
+    right:0px;
+    top: 25px;
+    left: 186px;
+    bottom: 0;
+    width:2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover .sp2:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+a .sp5:nth-child(4)
+{
+    left:13px;
+    top: 75px;
+    width:85%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover.sp5:nth-child(4)
+{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+a .sp6:nth-child(2)
+{
+    left: 15px;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    width: 84%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover .sp6:nth-child(2)
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+a .sp7:nth-child(3)
+{
+    right:0px;
+    top: 25px;
+    left: 166px;
+    bottom: 0;
+    width:2px;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.9s;
+}
+a:hover .sp7:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+a .sp8:nth-child(4)
+{
+    left:13px;
+    top: 78px;
+    width:85%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover.sp8:nth-child(4)
+{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.box1
+{
+    position: relative;
+    background-position: center;
+    background-size: cover;  
+}
+.box2
+{
+   position: absolute;
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+    top: 0px;
+}           
+.box3
+{
+    background-image: url(Real\ Fire\ Background.jpg);
+    height: 600px;
+    width: 90%;
+    border-radius: 20px;
+    position: absolute;
+    left: 4%;
+    top: 120px;
+    opacity: 0.8;
+    background-size: contain;
+    box-shadow: 2px solid black;  
+    border-style:hidden;
+}
+.box3 h1
+{
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 255, 255);
+    left: 280px;
+    top:45px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px orangered;
+    border-style: none;
+}
+.s
+{
+    color: orange;
+    text-shadow: 5px 5px 5px orangered;
+}
+.box4
+{
+    box-shadow: 20px 20px 20px  solid orangered;
+}
+.box4 img:hover
+{
+    transition: all;
+    transform: rotateY(180deg);
+    transition-duration:2s;
+  
+}
+.box4 img
+{
+    height: 280px;
+    width: 280px;
+    border-radius: 200px;
+    border-style: groove;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 41%;
+    top: 50%;  
+    border-color: orangered;
+}
+.box5
+{
+    height: 60px;
+    width: 300px;
+    border-bottom-right-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 67%;
+    top: 48%;
+    box-shadow: 1px 1px 1px 1px orangered;
+
+}
+.box5 h2
+{
+    position: absolute;
+    color: white;
+    left: 70px;
+    top: 10px;
+    font-size: 35px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.circle
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: groove;
+    border-color: orangered;
+    top: -30px;
+    left: -50px;
+    background-image: url(Grilled\ Meat\ Float\ Seasoning\ Fire.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.circle:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.box6
+{
+    height: 60px;
+    width: 300px;
+    border-bottom-right-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+.box6 h2
+{
+    position: absolute;
+    color: white;
+    left: 70px;
+    top: 10px;
+    font-size: 35px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.circle1
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+     border-style:outset;
+    top: -30px;
+    left:-50px;
+    background-color: cadetblue;
+    background-image: url(korean\ food.jpg);
+    background-position: center;
+    background-size: contain;
+    border-color: orangered;
+}
+.circle1:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.box7
+{
+    height: 60px;
+    width: 300px;
+    border-bottom-right-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 67%;
+    top: 93%;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+.box7 h2
+{
+    position: absolute;
+    color: white;
+    left: 70px;
+    top: 10px;
+    font-size: 35px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.circle2
+{
+    position: absolute;
+    height: 100px;
+    width:100px;
+    border-radius: 100px;
+    border-style: groove;
+    top: -30px;
+    left: -50px;
+    background-color: cadetblue;
+    background-image: url(easy.jpg);
+    background-position: center;
+    background-size: cover;
+    border-color: orangered;
+}
+.circle2:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.box8
+{
+    height: 60px;
+    width: 320px;
+    border-bottom-left-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 11%;
+    top:48%;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+.box8 h2
+{
+    position: absolute;
+    color: white;
+    left: 28px;
+    top: 10px;
+    font-size: 38px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.circle3
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: groove;
+    top: -30px;
+    left: 260px;
+    background-color: cadetblue;
+    background-image: url(Sichuan\ Beef\,\ Dry-Fried\ -\ The\ Woks\ of\ Life.jpg);
+    background-position: center;
+    background-size: cover;
+    border-color: orangered;
+}
+.circle3:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.box9
+{
+    height: 60px;
+    width: 300px;
+    border-bottom-left-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 9%;
+    top: 70%;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px orangered;  
+}
+.box9 h2
+{
+    position: absolute;
+    color: white;
+    left:100px;
+    top: 10px;
+    font-size: 38px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 5px orangered;
+}
+.circle4
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: groove;
+    top: -30px;
+    left: 250px;
+    background-image: url(orijit-chatterjee-wEBg_pYtynw-unsplash.jpg);
+    background-position: center;
+    background-size: contain;
+    border-color: orangered;
+}
+.circle4:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.box10
+{
+    height: 60px;
+    width: 300px;
+    border-bottom-left-radius: 100px;
+    background-color: black;
+    position: absolute;
+    left: 14%;
+    top: 93%;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px orangered;
+   
+}
+.box10 h2
+{
+    position: absolute;
+    color: white;
+    left:100px;
+    top: 10px;
+    font-size: 38px;
+    font-family: 'Carattere', cursive;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px orangered;
+    
+}
+.circle5
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: groove;
+    top: -30px;
+    left: 250px;
+    background-color: cadetblue;
+    background-image: url(briyani.jpg);
+    background-position: center;
+    background-size: cover;
+    border-color: orangered;
+}
+.circle:hover
+{
+    transition: all;
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.section
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    min-height: 100vh;
+    padding: 100px 100px;
+   
+}
+input[type="checkbox"]
+{
+    position: fixed;
+    z-index: 1;
+    top:40px;
+    right:100px;
+    cursor: pointer;
+    border-style: dotted;
+}
+input[type="checkbox"]:checked ~ *
+{
+background-image: url(foodframe.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
